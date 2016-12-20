@@ -1,10 +1,10 @@
-package tt;
+package general;
 
 import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
-public class tt {
+public class J6 {
 
 	public static void main(String[] args) {
 //		tt1();
