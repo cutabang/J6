@@ -35,7 +35,7 @@ public class J6 {
 	}
 	
 	static void tt2() {
-		System.out.println("simpledateformat(null) : " + new SimpleDateFormat("dd/MM/yy HH:mm").format(null));
+		System.out.println("simpledateformat(null) : " + new SimpleDateFormat("dd/MM/yy HH:mm").format(null)); //NPE
 	}
 	
 	static void tt3() {
@@ -48,6 +48,26 @@ public class J6 {
 		DateFormat df = new SimpleDateFormat("ddMMyyyy");
 		
 		System.out.println(String.format("df %s", df));
+	}
+	
+	static void tt5() {
+		long long1 = 100;
+		long long2 = 100l;
+		
+		//int int1 = 100l; //invalid
+		int int2 = (int) 100l;
+		
+		float float1 = 100f;
+		//float float2 = 100d; //invalid
+		float float4 = 100;
+		//float float3 = 100.0;//invalid
+		float float5 = 100.0f;
+		float float6 = (float) 100.0;
+		
+		double double1 = 100d;
+		double double2 = 100.0f;
+		double double4 = 100;
+		double double3 = 100.0;
 	}
 
 }
